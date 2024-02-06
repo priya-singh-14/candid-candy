@@ -1,17 +1,11 @@
-import express from "express";
-import cors from "cors";
-import helmet from "helmet";
-import router from "/routes/routes.js";
+// server with url defined as localhost
 
-const app = express();
-
-app.use(cors());
-app.use(helmet());
-app.use(express.json());
-app.use("/", router);
+import app from "./api/app.js";
 
 const HOSTNAME = "localhost";
-const PORT = 3002;
-app.listen(PORT, HOSTNAME, () => {
-  console.log("running");
+const PORT = 3000;
+
+// imported app to do the actual server
+app.listen(PORT, () => {
+  console.log(`Server running at http://${HOSTNAME}:${PORT}/`);
 });

@@ -2,7 +2,8 @@
   "name": "candid-candy",
   "version": "1.0.0",
   "description": "Heart Message Dashboard",
-  "main": "module",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js"
@@ -15,4 +16,5 @@
     "helmet": "^7.1.0",
     "nodemon": "^3.0.3"
   }
+
 }
