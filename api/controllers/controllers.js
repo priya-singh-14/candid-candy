@@ -7,12 +7,12 @@ class PageController{
     static getHomepage(req,res){
         // define the object here or get it from another source (aka database)
         const heart1 = {
-            author: "~anonymous",
+            author: "~ anonymous",
             text: "this is a candy heart",
             date: "Feb 13, 2024",
         };
         const heart2 = {
-            author: "~anonymous",
+            author: "~ anonymous",
             text: "this is another candy heart",
             date: "Feb 12, 2024",
         };
