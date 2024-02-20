@@ -5,7 +5,8 @@ const Schema = mongoose.Schema;
 const HeartSchema = new Schema({
     text: {type: String, required: true},
     to: {type: String, required: true},
-    date: {type: String, required: true}
+    date: {type: String, required: true},
+    id: {type: String, unique: true, required: true}
 }, {
     collection: 'all-hearts'
 });

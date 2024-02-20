@@ -10,13 +10,15 @@ class PageController{
             author: "~ anonymous",
             text: "this is a candy heart",
             date: "Feb 13, 2024",
-            to: "john doe"
+            to: "john doe",
+            id: "asdfs"
         };
         const heart2 = {
             author: "~ anonymous",
             text: "this is another candy heart",
             date: "Feb 12, 2024",
-            to: "barak obama"
+            to: "barak obama",
+            id: "asdi"
         };
 
         const heart = [heart1, heart2];
