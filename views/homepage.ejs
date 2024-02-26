@@ -8,12 +8,12 @@
   <body>
     <h1>Help - this isn't a homepage yet</h1>
 
-    <% for(let i = 0; i < heart.length; i++) { %>
+    <% for(let i = 0; i < hearts.length; i++) { %>
       <div class="heart">
-          <h2><%= heart[i].date %></h2>
-          <p><%= heart[i].text %></p>
+          <h2><%= hearts[i].date %></h2>
+          <p>to: <%= hearts[i].to %></p>
+          <p><%= hearts[i].text %></p>
           <p> ~ Anonymous %></p>
-          <p>to: <%= heart[i].to %></p>
       </div>
     <% } %>
   </body>

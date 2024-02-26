@@ -3,10 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="public/css/style.css" rel="stylesheet" type="text/css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>add heart!</h1>
-    <p>this is the page to add hearts to the database, which works all the way</p>
+    <h1>Add Hearts</h1>
+    <form method="POST">
+      <label for="to">To</label>
+      <input type="text" name="to" id="to" />
+      <br />
+      <br />
+      <label for="text">Text</label>
+      <input type="text" name="text" id="text" />
+      <br />
+      <label for="date">Date</label>
+      <input type="text" name="date" id="date" />
+      <br />
+      <input type="submit" value="Submit" />
+    </form>
+    <hr />
   </body>
 </html>
