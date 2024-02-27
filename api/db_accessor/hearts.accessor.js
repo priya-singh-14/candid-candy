@@ -15,6 +15,7 @@ export default class HeartsAccessor {
     }
 
     static async postHeart(heartDoc) {
-        Heart.create(heartDoc);
+        const doc = await Heart.create(heartDoc);
+        return doc;
       }
 }

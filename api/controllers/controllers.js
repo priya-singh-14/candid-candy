@@ -12,19 +12,23 @@ class PageController {
     }
 
     static getAddHeart(req, res){
-        res.sendFile(path.resolve() + "/views/addHeart.ejs")
+        res.render("addHeart.ejs", {});
     }
 
+    static openAddHeart(req, res){
+        res.render("/addHeart");
+    }
+    
     static async postHeart(req, res) {
         const heartToPost = {
-          title: req.body.to,
+          to: req.body.to,
           text: req.body.text,
           date: req.body.date,
         };
     
-        HeartsAccessor.postHeart(heartToPost);
+        const returned = await HeartsAccessor.postHeart(heartToPost);
     
-        res.redirect("/homepage");
+        res.redirect("/");
       }
 
     static getLogin(req,res){
