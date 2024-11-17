@@ -19,5 +19,7 @@ app.use(bodyParser.json());
 
 app.use("/", router);
 
+app.use('/assets', express.static('assets'));
+
 export default app;
 

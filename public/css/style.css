@@ -1,11 +1,153 @@
+@import url("https://use.typekit.net/zfd3qxc.css");
 
-.heart {
-    position: relative;
-    background-image: url('assets/tp.png'); /* Your PNG image */
-    background-size: cover;
-    background-position: center;
-    padding: 20px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    color: #333;
+body {
+    background-color: #FFE1FB;
+    font-family: "anonymous-pro", monospace;
+    font-style: normal;
 }
+
+.banner {
+  padding: 30px;
+  height: 40px;
+  text-align: center;
+  background-color: #F6BBE9;
+  color: #5B4155;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+h1 {
+    font-family: "anonymous-pro", monospace;
+    font-weight: 700;
+    font-style: bold;
+    color: #5B4155;
+    margin-top: 0;
+}
+
+h2 {
+    margin-left: 530px;
+    font-family: "anonymous-pro", monospace;
+    font-weight: 700;
+    font-style: italic;
+    color: #7c4770;
+    margin-bottom: 40px;
+}
+
+.heartButton { 
+    margin-left: 700px;
+    width: 40px;
+    height: auto;
+    border-radius: 4px;
+    color: blueviolet;
+}
+
+.heartGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.heart .bgImage {
+    position: relative;
+    align-items: center;
+  }
+  
+  .heart .bgImage img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  
+  .heart .textOverlay {
+    position: absolute;
+    max-width: 80%;
+    top: 45px;
+    left: 15%;
+    font-size: 1.1rem;
+    font-style: normal;
+    color: rgb(80, 0, 94); /* Text color */
+    justify-content: center; /* Center text vertically */
+    padding: 10px;
+    text-align: left; /* Align text */
+  }
+
+  .heartButton input {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(255, 188, 217);
+    border: none;
+    border-radius: 4px;
+    color: rgb(80, 0, 94);
+    margin-bottom: 40px;
+  }
+
+  .heartButton input:hover {
+    width: 90px;
+    height: 30px;
+    background-color: rgb(80, 0, 94);
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+  }
+
+  .heart .signOff{
+    position: absolute;
+    max-width: 80%;
+    top: 150px;
+    left: 45%;
+    font-size: 1.1rem;
+    font-style: normal;
+    color: rgb(80, 0, 94); /* Text color */
+    justify-content: center; /* Center text vertically */
+    padding: 10px;
+    text-align: left; /* Align text */
+  }
+
+  .typeField .typeHeart img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .typeField .typeForm {
+    position: absolute;
+    width: 110%;
+    top: 40%;
+    left: 43%;
+    font-size: 1.5rem;
+    font-style: normal;
+    color: rgb(80, 0, 94); /* Text color */
+    justify-content: center; /* Center text vertically */
+    padding: 10px;
+    text-align: left; /* Align text */
+  }
+
+  .typeField .typeForm .returnButton input {
+    width: 90px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color: rgb(255, 152, 196);
+    border: none;
+    border-radius: 4px;
+    color: rgb(80, 0, 94);
+    box-shadow: #5B4155;
+  }
+
+  .typeField .typeForm .returnButton input:hover {
+    width: 90px;
+    height: 30px;
+    margin-top: 40px;
+    margin-left: 50px;
+    background-color:rgb(80, 0, 94); /* Text color */
+    border: none;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+  }

@@ -7,18 +7,26 @@
     <link href="public/css/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
+    <div class="banner">
     <h1>Candid Candies</h1>
+   </div>
+      <div class="heartButton">
     <a href="/addHeart">
       <input type="submit" value="add heart" />
-    </a>
+    </a></div>
+    <div class="heartGrid">
     <% for(let i = 0; i < hearts.length; i++) { %>
       <div class="heart">
-          <h2><%= hearts[i].date %></h2>
-          <p>to: <%= hearts[i].to %></p>
+        <div class="bgImage"><img src="../assets/<%= i % 3 === 0 ? 'tp.png' : i % 3 === 1 ? 'tpblue.png' : 'tppink.png' %>" alt="Image Not Found">
+          <div class="textOverlay">
+          <p><strong><%= hearts[i].date %></strong></strong></p>
+          <p>To: <%= hearts[i].to %></p>
           <p><%= hearts[i].text %></p>
-          <p> ~ Anonymous %></p>
+        </div>
+        <div class="signOff"><p> - Anonymous %></p></div>
+          </div>
       </div>
     <% } %>
-    
+  </div>
   </body>
 </html>
